@@ -40,3 +40,12 @@
 
 提供一个工具，功能是根据给定的一个文件的其中的一的方法从图中检索到他的上下文
 
+## 使用
+```python
+from tree_sitter import Language, Parser
+project_folder = "../project_data/"
+JAVA_LANGUAGE = Language("build/my-languages.so", "java")
+java_parser = Parser()
+java_parser.set_language(JAVA_LANGUAGE)
+```
+project_folder中填入项目根目录所在位置即可
